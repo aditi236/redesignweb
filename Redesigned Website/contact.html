@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body 
+        {font-family: Arial, Helvetica, sans-serif;
+            color: #f4f2e8;
+            font-size: larger;
+            background-color: #242526;
+        
+        
+        }
+        * {box-sizing: border-box;}
+
+        .hm{
+            color: #f2aa4cff;
+            font-weight: bold;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 110px;
+        }
+        .mm{
+            color:#f4f2e8;
+            font-size: small;
+            text-align: center;
+            margin-top: 26px;
+            margin-left: -7px;
+        }
+        
+        input[type=text], select, textarea {
+          width: 100%;
+          padding: 13px;
+          background-color:#242526;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          margin-left: -26px;
+          
+          resize: vertical;
+        }
+
+        input[type=text]:hover{
+            background-color: #414346bb;
+            color: rgba(231, 170, 89, 0.822);
+        }
+        
+        input[type=submit] {
+          background-color: #f2aa4cff;
+          color: #f4f2e8;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+
+        #country{
+            color:#f2aa4cff;
+        }
+        ::placeholder{
+            color:#f2aa4cff;
+        }
+
+        #country:hover{
+            background-color: #414346bb;
+            color: rgba(231, 170, 89, 0.822);
+        }
+        #subject:hover{
+            background-color: #414346bb;
+            
+        }
+
+        
+        
+        input[type=submit]:hover {
+          background-color:rgba(231, 170, 89, 0.822);
+          color: #e1d9d1;
+        }
+        
+        .container {
+          border: none;
+          background-color: #242526;
+          padding: 176px;
+          margin-top: -88px;
+          
+        }
+
+        .footer {
+   
+   box-sizing: border-box;
+   height: 244px;
+    text-decoration: none;
+  padding: 20px;
+  text-align: center;
+  background: #242526;
+margin-top: -3px;
+margin-bottom: 0px;
+    font-size: 10px;
+    padding-top: 191px;
+    padding-right: 26px;
+    padding-bottom: 16px;
+   
+   
+}
+
+.flash1 a{
+text-decoration: none;
+color:#f4f2e8;
+border:1px solid;
+font-size: medium;
+padding:6px;
+float:left;
+border-color: #f2aa4cff;
+background-color:#f2aa4cff ;
+margin-top: -123px;
+border-radius:5px;
+
+}
+.flash2 a{
+    text-decoration: none;
+    color:#f4f2e8;
+    border:1px solid;
+    border-color: #f2aa4cff;
+background-color:#f2aa4cff ;
+font-size: medium;
+padding:6px;
+float:left;
+margin-top: -172px;
+margin-left: -1px;
+border-radius:5px;
+
+
+}
+
+.flash1 a:hover{
+    background-color:rgba(231, 170, 89, 0.822); 
+    color: #e1d9d1;
+}
+
+.flash2 a:hover{
+    background-color:rgba(231, 170, 89, 0.822);
+    color: #e1d9d1;
+}
+
+.flash3 p{
+    text-align: right;
+    margin-top: 3px;
+    padding-right: 0px;
+    color:#e1d9d1;
+    
+    
+}
+ hr{
+    border:0.01em solid #f2aa4cff;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f2aa4cff;
+ 
+ 
+ 
+}
+
+li {
+  float: left;
+ 
+}
+
+li a {
+  display: block;
+  color: #242526;
+  text-align: center center;
+  padding: 14px 16px;
+  text-decoration: none;
+ 
+ 
+}
+
+li a:hover {
+  background-color: rgba(231,170,89,0.822);
+  color:#696969;
+ 
+}
+.active{
+background-color:#242526;
+color:#f2aa4cff;
+
+
+
+}
+.active:hover{
+background-color:rgba(231,170,89,0.822);
+color:#696969;
+
+
+}
+
+
+
+
+        </style>
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="career.html">Careers</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+      
+    
+    <div class="hm">Contact Us</div>
+     <div class="mm">We'd love to hear from you.</div>
+<div class="container">
+  <form   action="/thankyou.html">
+    
+    <input type="text" id="name" name="fname" placeholder="Your Name" required>
+
+    
+    <input type="text" id="email" name="femail" placeholder="Email" required>
+
+    
+    <select id="country" name="fcountry" required>
+      <option value="country">Country</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    
+    <textarea id="subject" name="subject" placeholder="Write to us..." style="height:200px" required></textarea>
+     
+    <input type="submit" value="submit">
+    
+   
+    
+    
+    
+  </form>
+</div>
+
+<div class="footer">
+     
+    <div class="flash1"><a href="tel:+1-800-354-9165"title="1-800-354-9165">Call us</a></div>
+    <hr>
+    <div class="flash2"><a href="mailto:industrialpainter@gmail.com"title="industrialpainter@gmail.com">Email </a></div>
+    <div class="flash3"><p> Industrial Painter</p></div>
+    <div class="flash3"><p> 6302 Illinios Rd</p></div>
+    <div class="flash3"><p> Fort Wayne,IN 46804</p></div>
+    
+    <p> Design by | 
+        <a title="Website designed by Group-7">Group-7</a> | 
+        <a title="Privacy Policy">Privacy Policy</a> | 
+        <a title="Terms Of Use">Terms Of Use</a> | 
+    <h6>&copy 2009|IndustrialPainter|All Rights Reserved</h6>
+    </div>
+    
+    </body>
+    </html>
+    
+</body>
+</html>

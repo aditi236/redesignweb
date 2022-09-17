@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #242526;
+}
+
+.topnav {
+  overflow: hidden; 
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color:#f2aa4cff;
+  text-align: center;
+  padding: 14px 28px;
+  text-decoration: none;
+  font-size: 20px;  
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color:#f2aa4cff
+}
+
+.topnav a.active {
+  background-color:rgba(231,170,89,0.822);
+  color:rgb(0, 0, 0);
+}
+.active{
+background-color:#242526;
+color:#f2aa4cff;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(231,170,89,0.822);
+    font-size: larger;
+    background-color: #242526;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create a column layout with Flexbox */
+.row {
+  display: flex;
+}
+
+/* Left column (menu) */
+.left {
+  flex: 35%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+/* Right column (page content) */
+.right {
+  flex: 65%;
+  padding: 20px;
+}
+
+.footer {
+   
+   box-sizing: border-box;
+   height: 244px;
+    text-decoration: none;
+  padding: 20px;
+  text-align: center;
+  background: #242526;
+margin-top: -3px;
+margin-bottom: 0px;
+    font-size: 10px;
+    padding-top: 191px;
+    padding-right: 26px;
+    padding-bottom: 16px;
+   
+   
+}
+
+
+
+.flash3 p{
+    text-align: right;
+    margin-top: 3px;
+    padding-right: 0px;
+    color:#e1d9d1;
+    
+    
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="Service.html">Services</a>
+  <a href="Career.html">Careers</a>
+  <a href="Contact.html">Contact Us</a>
+</div>
+
+<div style="padding-left:30px">
+  <h2 > Painting Services</h2>
+  
+</div>
+  
+<div class="right" style="background-color:#242526;">
+    <h2>Our Services.</h2>
+    <p>Over the years, we have kept pace with the latest technological developments and adapted our painting services to best meet the needs of our clients. </p>
+    <p>This allows us to comfortably move from painting industrial plants and machines to boardrooms; from restoring historical landmarks to applying the newest specialty coatings; and from traditional surface preparation to lead paint removal.</p>
+    <p>Our Painting Services include -</p>
+    <ul>
+		<li>Surface Preparation.</li>
+		<li>Restoration Services.</li>
+		<li>Lead Paint Abatement.</li>
+		<li>Aerial work.</li>
+		<li>Protective Painting.</li>
+		<li>Corrosion Services and many other services.</li>
+	</ul> 
+	</div>
+
+<div class="right" style="background-color:#242526;">
+    <h2>Specialties.</h2>
+    <p>Our painting specialties cover a broad range of industry sectors, by customer demand; we have a specialized industrial division, which service all types of Industrial structures, buildings, factories, and manufacturing plants.</p> 
+	</div>
+
+<div class="right" style="background-color:#242526;">
+    <h2>Structures.</h2>
+    <p>In architecture, construction, engineering and real estate development the word building may refer to one of the following: Any man-made structure used or intended for supporting or sheltering any use or continuous occupancy or an act of construction.</p>
+	<p>Buildings and other structures that are not intended for continuous human occupancy are nonbuilding structures or simply structures.</p>
+	</div>
+
+<div class="right" style="background-color:#242526;">
+    <h2>Contractors.</h2>
+    <p>General painting contractors are considered to be "generalists" and speciality painting contractors are "specialists." If you need a specific type of building or structure painted, naturally, you'll go with a specialist.</p>
+	</div>
+
+<div class="footer">
+     
+  <hr>
+  <div class="flash3"><p> Industrial Painter</p></div>
+  <div class="flash3"><p> 6302 Illinios Rd</p></div>
+  <div class="flash3"><p> Fort Wayne,IN 46804</p></div>
+  
+  <p> Design by | 
+      <a title="Website designed by Group-7">Group-7</a> | 
+      <a title="Privacy Policy">Privacy Policy</a> | 
+      <a title="Terms Of Use">Terms Of Use</a> | 
+  <h6>&copy 2009|IndustrialPainter|All Rights Reserved</h6>
+  </div>
+  
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+</body>
+</html>

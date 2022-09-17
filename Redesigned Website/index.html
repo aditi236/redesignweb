@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Industrial Painter</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="./img/LOGO.jpg" rel="shortcut icon" title="Industrial Painter">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: #aaa;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 5px;
+  text-align: center;
+  background: #242526;
+  color: #f2aa4cff
+  ;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f2aa4cff;
+  
+  
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #242526;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgba(231,170,89,0.822);
+  color:#696969;
+}
+.active{
+background-color:#242526;
+color:#f2aa4cff;
+
+
+}
+.active:hover{
+background-color:rgba(231,170,89,0.822);
+color:#696969;
+
+}
+
+
+/* Column container */
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: #242526;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: -3px;
+  padding-left: 2px;
+  padding-right: 61px;
+  padding-top: 2px;
+  padding-bottom: 21.75px;
+  margin-top: 2px;
+  margin-left: 3px;
+  
+}
+.fakeimgs{
+    background-color: #aaa;
+  width: 100%;
+  padding: 0px;
+  background-position: center;
+  background-image: url("./img/BLACK1.jpg");
+  
+
+}
+.column1{
+    float:left;
+    width:30%;
+    padding:13px;
+    padding-left: 2px;
+    padding-right: 3px;
+    padding-inline-end: 2px;
+    background-color: #242526;
+    position:relative;
+
+}
+.column2{
+    float:left;
+    width:40%;
+    height:0%;
+    padding:13px;
+    padding-left: 2px;
+    padding-right: 3px;
+    padding-inline-end: 2px;
+    background-color: #242526;
+    position:relative;
+    
+}
+.column3{
+    float:right;
+    width:30%;
+    padding:13px;
+   padding-left: 2px;
+    padding-right: 3px;
+    padding-inline-end: 2px;
+    background-color: #242526;
+    position:relative;
+}
+
+.me::after{
+    
+    content:"";
+    clear:both;
+    display:table;
+    
+}
+
+/* Footer */
+.footer {
+    border:none;
+    text-decoration: none;
+  padding: 20px;
+  text-align: center;
+  background: #242526;
+
+    font-size: 10px;
+    padding-top: 10px;
+    padding-right: 0;
+    padding-bottom: 10px;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+    
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.column1:hover .image {
+  opacity: 0.3;
+}
+
+.column1:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color:#696969;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.image2 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle2 {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.column2:hover .image2 {
+  opacity: 0.3;
+}
+
+.column2:hover .middle2 {
+  opacity: 1;
+}
+
+.text2 {
+  background-color:#696969;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.image3 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle3 {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.column3:hover .image3 {
+  opacity: 0.3;
+}
+
+.column3:hover .middle3{
+  opacity: 1;
+}
+
+.text3{
+  background-color:#696969;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Industrial Painter</h1>
+  <p>Paint your imagination.</p>
+</div>
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="service.html">Services</a></li>
+  <li><a href="career.html">Careers</a></li>
+  <li><a href="contact.html">Contact Us</a></li>
+</ul>
+
+
+
+  <div class="main">
+    <h2>Welcome To Industrial Painter</h2>
+    <hr>
+    
+    <div class="fakeimgs">
+        <img src="./img/BLACK1.jpg">
+    </div>
+    <br>
+    <p>Industrial Painters strives to provide customers zero defect performance and on-time completions, for any industrial painting or commercial painting project. The very best paint manufacturers represent the backbone of expertise in our product engineering section.<p>
+        We can take on any worst case scenarios with confidence and produce perfection. Do you have an industrial painting or commercial painting project coming up? Commercial Painter offers what you want most, choices!<p>
+        The fact is, we will offer you more ideas and better solutions than many other painting companies. We provide a no obligation, on-site inspection, consulting service with free quotes. Get your best quote within our industry. Please include Industrial Painter to your list of bidders for any industrial painting or commercial painting job requiring perfection</p>
+    <br>
+    <br>
+
+    <H2>Single Source Commercial Painter</H2>
+    <hr>
+    <P>Remember, we are painters specializing in industrial painting or commercial painting, repainting, recoating, and restoring: metal deck ceilings, vinyl ceilings, wood deck ceilings and interior walls for commercial buildings, commercial warehouses, Industrial factories, plants plus manufacturing facilities operating at full production.<P>
+      Industrial Painter primarily servers the Midwest, Southeast, Southwest, Northwest, Northeast, Eastern, Western, and all regions of the USA. Including, Alaska, Hawaiian Islands, Puerto Rico, and Virgin Islands.</P>
+      <br>
+      <br>
+      
+     
+    
+    <h2>Our Quality Shows</h2>
+    <hr>
+    <p>If you require a industrial painter or commercial painter, professional spray painters, airless spray painters, painting service, or restoration company we are the one.</p>
+    
+
+    
+</div>
+<div class="me">
+    <div class="column1">
+        <img src="./img/commercial.jpg"  class="image" style="width:100%">
+    
+  <div class="middle">
+    <div class="text">Commercial Painting</div>
+  </div>
+</div>
+
+<div class="column2">
+    <img src="./img/agricultural2.jpg" class="image2"style="width:100%">
+   <div class="middle2">
+     <div class="text2">Agricultural Painting</div>
+   </div>
+ </div>
+
+ <div class="column3">
+    <img src="./img/military.jpg" class="image3" style="width:100%">
+  <div class="middle3">
+    <div class="text3">Military Painting</div>
+  </div>
+</div>
+</div>
+
+</div>
+<div class="footer">
+<p> Design by | 
+    <a title="Website designed by Group-7">Group-7</a> | 
+    <a title="Privacy Policy">Privacy Policy</a> | 
+    <a title="Terms Of Use">Terms Of Use</a> | 
+<h6>&copy 2009|IndustrialPainter|All Rights Reserved</h6>
+</div>
+
+</body>
+</html>
+
+
